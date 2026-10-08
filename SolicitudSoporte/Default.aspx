@@ -4,8 +4,8 @@
 
     <div class="jumbotron">
         <h1>Soporte institucional</h1>
-        <p class="lead">Sistema para generar soporte, visualizar tickets y darle seguimiento.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p class="lead">Sistema para generar soporte a todo el personal de la organización. Puede crear tu propia solicitud mediante un ticket de soporte técnico. Poder visualizar todos los tickets y darle seguimiento mediante métricas. </p>
+        <p>&nbsp;</p>
     </div>
 
     </asp:Content>
