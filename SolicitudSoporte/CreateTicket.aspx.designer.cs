@@ -22,6 +22,15 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_title;
         
         /// <summary>
+        /// Control title.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText title;
+        
+        /// <summary>
         /// Control lb_email.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace SolicitudSoporte {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lb_email;
+        
+        /// <summary>
+        /// Control email.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText email;
         
         /// <summary>
         /// Control lb_categoty.
@@ -40,6 +58,15 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_categoty;
         
         /// <summary>
+        /// Control categoty.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect categoty;
+        
+        /// <summary>
         /// Control lb_priority.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_priority;
         
         /// <summary>
+        /// Control priority.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect priority;
+        
+        /// <summary>
         /// Control lb_description.
         /// </summary>
         /// <remarks>
@@ -56,5 +92,23 @@ namespace SolicitudSoporte {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lb_description;
+        
+        /// <summary>
+        /// Control description.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea description;
+        
+        /// <summary>
+        /// Control Save.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Save;
     }
 }

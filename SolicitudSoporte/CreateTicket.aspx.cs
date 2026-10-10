@@ -19,19 +19,16 @@ namespace SolicitudSoporte
         {
             Ticket ticket = new Ticket();
 
-            ticket.Id = 1;
-            ticket.Title = "Ayuda";
-            ticket.Email = "a@a.com";
-            ticket.Category = "HS";
-            ticket.Priority = "Alta";
-            ticket.Description = "aaaa";
+            ticket.Id = Tickets.list.Count + 1;
+            ticket.Title = title.Value;
+            ticket.Email = email.Value;
+            ticket.Category = categoty.Value;
+            ticket.Priority = priority.Value;
+            ticket.Description = description.Value;
             ticket.State = "Nuevo";
-            //ticket.CreatedIn = 1;
+            ticket.CreatedIn = DateTime.Now;
 
             Tickets.list.Add(ticket);
-            Console.WriteLine("aaaa");
-            ClientScript.RegisterStartupScript(this.GetType(), "alerta",
-    "alert('Ticket guardado correctamente');", true);
 
         }
     }
