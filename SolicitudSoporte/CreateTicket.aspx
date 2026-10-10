@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CreateTicket.aspx.cs" Inherits="SolicitudSoporte.CreateTicket" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1 class="text-center my-3">Crear un nuevo ticket
-    </h1>
+    <h1 class="text-center my-5">Crear un nuevo ticket</h1>
 
     <div id="formTicket">
+
         <div>
             <input id="id" type="hidden" />
         </div>
@@ -43,8 +43,7 @@
         </div>
         <br />
         <div>
-            <input id="Submit" type="submit" value="Enviar" class="btn btn-primary" />
+            <input id="Save" type="submit" value="Enviar"  class="btn btn-primary" onclick="Save_Click"  />
         </div>
     </div>
-
-    </asp:Content>
+</asp:Content>
