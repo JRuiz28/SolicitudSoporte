@@ -4,6 +4,8 @@
     <h1 class="text-center my-5">Crear un nuevo ticket</h1>
 
     <div id="formTicket">
+        
+        <div id="alert" class="alert hidden" role="alert"></div>
 
         <div>
             <input id="id" type="hidden" />
@@ -11,13 +13,13 @@
 
         <div class="input-group">
             <asp:Label ID="lb_title" runat="server" Text="Label" class="form-label">Titulo <b class="text-danger">*</b></asp:Label>
-            <input id="title" runat="server" type="text" placeholder="Agrega un título de su ticket aquí" class="form-control" />
+            <input id="title" runat="server" ClientIDMode="Static" type="text" placeholder="Agrega un título de su ticket aquí" class="form-control" />
         </div>
 
         <br />
         <div class="input-group">
             <asp:Label ID="lb_email" runat="server" Text="Label" class="form-label">Correo electrónico <b class="text-danger">*</b></asp:Label>
-            <input id="email" runat="server" type="text" class="form-control" placeholder="ejemplo@ejemplo.com" />
+            <input id="email" runat="server" ClientIDMode="Static" type="text" class="form-control" placeholder="ejemplo@ejemplo.com" />
         </div>
 
         <br />
@@ -44,12 +46,46 @@
         <br />
         <div class="input-group">
             <asp:Label ID="lb_description" runat="server" Text="Label" class="form-label" >Descripción <b class="text-danger">*</b></asp:Label>
-            <textarea id="description" runat="server" cols="20" rows="5" class="form-control"></textarea>
+            <textarea id="description" ClientIDMode="Static" runat="server" cols="20" rows="5" class="form-control"></textarea>
         </div>
 
         <br />
         <div>
-            <asp:Button ID="Save" runat="server" Text="Enviar" CssClass="btn btn-primary" OnClick="Save_Click" />
+            <asp:Button ID="Save" runat="server" Text="Enviar"  ClientIDMode="Static" CssClass="btn btn-primary" OnClick="Save_Click" />
         </div>
     </div>
+
+<script>
+    $(document).ready(function () {
+        $("#Save").click(function () {
+            var message = "Algunos campos son requeridos:";
+            var messageSuccess = "Información guardada con éxito.";
+            var hasReq = false;
+
+            if ($.trim($("#title").val()) == "") {
+                message = message + " - Título";
+                hasReq = true;
+            }
+
+            if ($.trim($("#email").val()) == "") {
+                message = message + " - Correo";
+                hasReq = true;
+            }
+
+            if ($.trim($("#description").val()) == "") {
+                message = message + " - Descripción";
+                hasReq = true;
+            }
+
+            if (hasReq) {
+                $("#alert").text(message).removeClass("hidden alert-success").addClass("alert-danger");
+
+                return false;
+            }
+            else {
+                alert(messageSuccess);
+            }
+        });
+    });
+</script>
 </asp:Content>

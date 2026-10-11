@@ -30,6 +30,16 @@ namespace SolicitudSoporte
 
             Tickets.list.Add(ticket);
 
+            cleanField();
+        }
+
+        private void cleanField()
+        {
+            title.Value = "";
+            email.Value = "";
+            categoty.Value = "Mantenimiento de sistema";
+            priority.Value = "Media";
+            description.Value = "";
         }
     }
 }
