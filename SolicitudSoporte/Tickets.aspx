@@ -30,7 +30,7 @@
                                     <td><%#: Eval("Email") %></td>
                                     <td><%#: Eval("Category") %></td>
                                     <td><%#: Eval("Priority") %></td>
-                                    <td><span class="badge"><%#: Eval("State") %></span></td>
+                                    <td><span class="label label-primary"><%#: Eval("State") %></span></td>
                                     <td><%#: Eval("CreatedIn", "{0:dd/MM/yyyy}") %></td>
                                 </tr>
                             </ItemTemplate>
