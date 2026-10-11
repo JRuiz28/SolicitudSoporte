@@ -4,8 +4,6 @@
     <h1 class="text-center my-3">Todos los tickets
     </h1>
 
-
- 
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div class="table-responsive">
@@ -44,6 +42,6 @@
         </Triggers>
     </asp:UpdatePanel>
                         
-    <asp:Button ID="Button1" runat="server" Text="Actualizar" OnClick="updateData" />
+    <asp:Button ID="Button1" runat="server" Text="Actualizar" OnClick="updateData" class="btn btn-primary" />
 
 </asp:Content>

@@ -13,6 +13,15 @@ namespace SolicitudSoporte {
     public partial class Metrics {
         
         /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
         /// Control UpdatePanel1.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,42 @@ namespace SolicitudSoporte {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
+        /// Control barCritical.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl barCritical;
+        
+        /// <summary>
+        /// Control barHigh.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl barHigh;
+        
+        /// <summary>
+        /// Control barMedium.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl barMedium;
+        
+        /// <summary>
+        /// Control barLow.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl barLow;
         
         /// <summary>
         /// Control lb_critics.
@@ -31,13 +76,13 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_critics;
         
         /// <summary>
-        /// Control lb_critics_percent.
+        /// Control lb_critics_percentage.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_critics_percent;
+        protected global::System.Web.UI.WebControls.Label lb_critics_percentage;
         
         /// <summary>
         /// Control lb_high.
@@ -49,13 +94,13 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_high;
         
         /// <summary>
-        /// Control lb_high_percent.
+        /// Control lb_high_percentage.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_high_percent;
+        protected global::System.Web.UI.WebControls.Label lb_high_percentage;
         
         /// <summary>
         /// Control lb_medium.
@@ -67,13 +112,13 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_medium;
         
         /// <summary>
-        /// Control lb_medium_percent.
+        /// Control lb_medium_percentage.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_medium_percent;
+        protected global::System.Web.UI.WebControls.Label lb_medium_percentage;
         
         /// <summary>
         /// Control lb_low.
@@ -85,12 +130,12 @@ namespace SolicitudSoporte {
         protected global::System.Web.UI.WebControls.Label lb_low;
         
         /// <summary>
-        /// Control lb_low_percent.
+        /// Control lb_low_percentage.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_low_percent;
+        protected global::System.Web.UI.WebControls.Label lb_low_percentage;
     }
 }

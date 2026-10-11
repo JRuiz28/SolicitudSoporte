@@ -11,22 +11,26 @@
         
         <br />
 
+        <asp:Button ID="Button1" runat="server" Text="Actualizar" OnClick="updateData" class="btn btn-primary" />
+        
+        <br />
+        
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-            
             <ContentTemplate>
+                <br />
 
                 <div class="row">
                     <div class="progress">
-                        <div class="progress-bar progress-bar-danger" style="width: 10%">
+                        <div class="progress-bar progress-bar-danger" runat="server" id="barCritical">
                             <span class="sr-only">Crítica</span>
                         </div>
-                        <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" runat="server" id="barHigh">
                             <span class="sr-only">Alta</span>
                         </div>
-                        <div class="progress-bar progress-bar-success" style="width: 35%">
+                        <div class="progress-bar progress-bar-success" runat="server" id="barMedium">
                             <span class="sr-only">Media</span>
                         </div>
-                        <div class="progress-bar progress-bar-info" style="width: 35%">
+                        <div class="progress-bar progress-bar-info" runat="server" id="barLow">
                             <span class="sr-only">Baja</span>
                         </div>
                     </div>
@@ -41,7 +45,7 @@
                                 <h3><b>Crítica</b> <asp:Label ID="lb_critics" runat="server"></asp:Label></h3>
                         
                                 <p style="font-size: 40px; font-weight: bold; margin-bottom: 10px;">
-                                    <asp:Label ID="lb_critics_percent" runat="server"></asp:Label>
+                                    <asp:Label ID="lb_critics_percentage" runat="server"></asp:Label>
                                 </p>
                             </div>
                         </div>
@@ -53,7 +57,7 @@
                                 <h3><b>Alto</b> <asp:Label ID="lb_high" runat="server"></asp:Label></h3>
                         
                                 <p style="font-size: 40px; font-weight: bold; margin-bottom: 10px;">
-                                    <asp:Label ID="lb_high_percent" runat="server"></asp:Label>
+                                    <asp:Label ID="lb_high_percentage" runat="server"></asp:Label>
                                 </p>
                             </div>
                         </div>
@@ -65,7 +69,7 @@
                                 <h3><b>Medio</b> <asp:Label ID="lb_medium" runat="server"></asp:Label></h3>
                         
                                 <p style="font-size: 40px; font-weight: bold; margin-bottom: 10px;">
-                                    <asp:Label ID="lb_medium_percent" runat="server"></asp:Label>
+                                    <asp:Label ID="lb_medium_percentage" runat="server"></asp:Label>
                                 </p>
                             </div>
                         </div>
@@ -77,7 +81,7 @@
                                 <h3><b>Bajo</b> <asp:Label ID="lb_low" runat="server"></asp:Label></h3>
                         
                                 <p style="font-size: 40px; font-weight: bold; margin-bottom: 10px;">
-                                    <asp:Label ID="lb_low_percent" runat="server"></asp:Label>
+                                    <asp:Label ID="lb_low_percentage" runat="server"></asp:Label>
                                 </p>
                             </div>
                         </div>
@@ -85,6 +89,9 @@
             
                 </div>
             </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="Button1" EventName="Click" />
+            </Triggers>
         </asp:UpdatePanel>
     </div>
 </asp:Content>
